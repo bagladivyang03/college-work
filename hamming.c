@@ -16,7 +16,7 @@ int main()
 			a[i]=0;
 		}
 	}
-	for(j=0;j<12;j=j+2)
+	for(j=0;j<12;j=j+2)        //to calculate p1
 	{
 		if(a[j]==1)
 		{
@@ -32,7 +32,7 @@ int main()
 	{
 		a[0]=0;
 	}
-	while(k<11)
+	while(k<11)           //to calculate p2
 	{
 		if(k==2 || k==5 || k==6 || k==9 || k==10)
 		{
@@ -50,7 +50,7 @@ int main()
 	{
 		a[1]=0;
 	}
-	while(l<11)
+	while(l<11)            //to calculate p3
 	{
 		if(l==4 || l==5 || l==6 || l==11)
 		{
@@ -69,7 +69,7 @@ int main()
 	{
 		a[3]=0;
 	}
-	while(m<11)
+	while(m<11)        //to calculate p4
 	{
 		if(m==8 || m==9 || m==10 || m==11)
 		{
