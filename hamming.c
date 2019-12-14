@@ -1,28 +1,30 @@
 #include<stdio.h>
+
 int main()
 {
-	int a[12];
-	int i,j=0,k=0,l=0,m=0,s=0,s1=0,s2=0,s3=0;
+    int a[12];
+    int i;
+	int j=0,k=0,l=0,m=0,s=0,s1=0,s2=0,s3=0;
 	for(i=0;i<12;i++)
 	{
 		if(i!=0 && i!=1 && i!=3 && i!=7)
 		{
 			scanf("%d",&a[i]);
-						
-			
+
+
 		}
 		else	
 		{
 			a[i]=0;
 		}
 	}
-	for(j=0;j<12;j=j+2)        //to calculate p1
+	for(j=0;j<12;j=j+2)
 	{
 		if(a[j]==1)
 		{
 			s++;
 		}
-		
+
 	}
 	if(s%2==1)
 	{
@@ -32,7 +34,7 @@ int main()
 	{
 		a[0]=0;
 	}
-	while(k<11)           //to calculate p2
+	while(k<11)
 	{
 		if(k==2 || k==5 || k==6 || k==9 || k==10)
 		{
@@ -50,7 +52,7 @@ int main()
 	{
 		a[1]=0;
 	}
-	while(l<11)            //to calculate p3
+	while(l<12)
 	{
 		if(l==4 || l==5 || l==6 || l==11)
 		{
@@ -69,7 +71,7 @@ int main()
 	{
 		a[3]=0;
 	}
-	while(m<11)        //to calculate p4
+	while(m<12)
 	{
 		if(m==8 || m==9 || m==10 || m==11)
 		{
@@ -87,9 +89,10 @@ int main()
 	{
 		a[7]=0;
 	}
-	for(i=0;i<12;i++)
-	{
-		printf("%d",a[i]);
-	}
-return 0;
+	printf("frame to be sent to receiver with parity values is this : \n");
+    for(i=0;i<12;i++)
+    {
+        printf("%d",a[i]);
+    }
+    return 0;
 }
