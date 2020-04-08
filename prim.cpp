@@ -81,7 +81,7 @@ class GraphPrim{
         int r=0;
         int min ;
         int j;
-        for(int i=0;i<noofvertices;i++)
+        for(int i=1;i<noofvertices;i++)
         {
             min=INT_MAX;
             for(int k=0;k<noofvertices;k++)
@@ -107,7 +107,7 @@ class GraphPrim{
         }
         cout<<"MST VALUE :"<<mincost<<"\n";
         cout<<"the reaktions of edges of this tree is:\n";
-        for(int i=0;i<r-1;i++)
+        for(int i=0;i<r;i++)
         {
             for(int j=0;j<2;j++)
             {
