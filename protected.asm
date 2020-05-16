@@ -100,3 +100,4 @@ down2:add dl,30H
     jnz up2
     display 1,1,buff,4
 ret 
+
