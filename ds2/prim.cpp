@@ -106,7 +106,7 @@ class GraphPrim{
             }
         }
         cout<<"MST VALUE :"<<mincost<<"\n";
-        cout<<"the reaktions of edges of this tree is:\n";
+        cout<<"the resultant edges of this tree is:\n";
         for(int i=0;i<r;i++)
         {
             for(int j=0;j<2;j++)
