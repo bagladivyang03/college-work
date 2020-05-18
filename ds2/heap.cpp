@@ -78,7 +78,66 @@ class heap{
 int main()
 {
     heap h;
-    //h.max_heap();
-    h.min_heap();
+    int ch;
+    do{
+        cout<<"Enter the choice below :\n1.MAX heap \n2.MIN heap \n3.EXIT\n";
+        cin>>ch;
+        switch(ch)
+        {
+            case 1:
+            h.max_heap();
+            break;
+            case 2:
+            h.min_heap();
+            break;
+            case 3:
+            exit(0);
+        }
+    }while(ch!=3);
 }
+
+/*
+OUTPUT:-
+Enter the no. of students:10
+Enter the choice below :
+1.MAX heap
+2.MIN heap
+3.EXIT
+1
+Enter the marks of student 1:90
+Enter the marks of student 2:88
+Enter the marks of student 3:76
+Enter the marks of student 4:54
+Enter the marks of student 5:45
+Enter the marks of student 6:12
+Enter the marks of student 7:34
+Enter the marks of student 8:54
+Enter the marks of student 9:99
+Enter the marks of student 10:100
+100     99      76      88      90      12      34      54      54      45      
+Maximum Marks:100
+Enter the choice below :
+1.MAX heap
+2.MIN heap
+3.EXIT
+2
+Enter the marks of student1:100
+Enter the marks of student2:12
+Enter the marks of student3:13
+Enter the marks of student4:14
+Enter the marks of student5:55
+Enter the marks of student6:6
+Enter the marks of student7:22
+Enter the marks of student8:34
+Enter the marks of student9:11
+Enter the marks of student10:10
+6       10      12      14      11      13      22      100     34      55
+Minimum Marks:6
+Enter the choice below :
+1.MAX heap
+2.MIN heap
+3.EXIT
+3
+*/
+
 
